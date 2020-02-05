@@ -12,4 +12,13 @@ public class AsignacionTest {
         System.out.println("- Test getDNI:");
         System.out.println(array.getDNI());
     }
+    
+    @Test
+    public void getDNI() {
+        Asignacion dni = new Asignacion(43474645);
+        dni.calcularLetra();
+        dni.añadirLetra();
+        System.out.println("- Test getDNI:");
+        System.out.println(dni.getDNI());
+    }
 }
