@@ -6,8 +6,10 @@ public class AsignacionTest {
 
     @Test
     public void crearAsignacion() {
-        Asignacion tabla = new Asignacion();
-        System.out.println("- Test crearTabla:");
-        System.out.println(tabla.toString());
+        Asignacion array = new Asignacion(43474645);
+        System.out.println("- Test getArrayLetras:");
+        System.out.println(array.getArrayLetras());
+        System.out.println("- Test getDNI:");
+        System.out.println(array.getDNI());
     }
 }
