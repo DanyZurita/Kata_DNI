@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="edu.elsmancs.dni.domain.AsignacionTest" time="0.003" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="edu.elsmancs.dni.domain.AsignacionTest" time="0.004" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.1+13"/>
@@ -66,4 +66,9 @@
   <testcase classname="edu.elsmancs.dni.domain.AsignacionTest" name="crearAsignacion" time="0.003"/>
   <testcase classname="edu.elsmancs.dni.domain.AsignacionTest" name="DNI1" time="0"/>
   <testcase classname="edu.elsmancs.dni.domain.AsignacionTest" name="DNI2" time="0"/>
+  <testcase classname="edu.elsmancs.dni.domain.AsignacionTest" name="DNI3" time="0"/>
+  <testcase classname="edu.elsmancs.dni.domain.AsignacionTest" name="DNI4" time="0"/>
+  <testcase classname="edu.elsmancs.dni.domain.AsignacionTest" name="DNI5" time="0"/>
+  <testcase classname="edu.elsmancs.dni.domain.AsignacionTest" name="DNI6" time="0"/>
+  <testcase classname="edu.elsmancs.dni.domain.AsignacionTest" name="DNI7" time="0.001"/>
 </testsuite>
