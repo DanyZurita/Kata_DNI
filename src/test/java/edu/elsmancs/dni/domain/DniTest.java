@@ -21,10 +21,10 @@ public class DniTest {
     
     @Test
     public void DNI2() {
-        Dni dni = new Dni("4347464544");
+        Dni dni = new Dni("43474644");
         char letra = dni.calcularLetra(dni.getInitialDNI());
         dni.añadirLetra(letra);
-        assertEquals(dni.getFinalDNI(), "4347464544K");
+        assertEquals(dni.getFinalDNI(), "43474644K");
 
         System.out.println("- Test getInitialDni:");
         System.out.println(dni.getInitialDNI());
