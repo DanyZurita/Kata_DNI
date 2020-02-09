@@ -16,7 +16,7 @@ public class Asignacion {
         return this.arrayLetras;
     }
     
-    protected int getArrayLength(){
+    int getArrayLength(){
         return arrayLetras.length;
     }
     protected String getDni() {
@@ -27,10 +27,10 @@ public class Asignacion {
         return this.DNI;
     }
     
-    protected char getLetra(int posicion) {
+    char getLetra(int posicion) {
            return this.arrayLetras[posicion];
     }
-    protected void setDNI(String dniCompleto) {
+    void setDNI(String dniCompleto) {
         this.DNI = dniCompleto;
     }
 }

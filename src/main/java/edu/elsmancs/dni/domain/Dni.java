@@ -9,13 +9,13 @@ public class Dni {
         this.asig = new Asignacion(dni);
     }
     
-    protected char calcularLetra(String DNI) {
+    public char calcularLetra(String DNI) {
         int numerosDNI = Integer.parseInt(DNI);
         int posicion = numerosDNI % asig.getArrayLength(); 
         return asig.getLetra(posicion);
     }
     
-    protected void añadirLetra(char letra) {
+    public void añadirLetra(char letra) {
         String stringLetra = String.valueOf(letra);
         String dniCompleto = asig.getDni().concat(stringLetra);
         asig.setDNI(dniCompleto);
