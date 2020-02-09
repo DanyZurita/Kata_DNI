@@ -19,16 +19,15 @@ public class AsignacionTest {
     
     @Test
     public void DNI1() {
-        Asignacion asig = new Asignacion("43474645");
-        Dni dni = new Dni();
-        char letra = dni.calcularLetra(asig.getDni());
-        String dniCompleto = dni.añadirLetra(letra);
-        assertEquals(asig.getDNI(), "43474645E");
+        Dni dni = new Dni("43474645");
+        char letra = dni.calcularLetra(dni.getInitialDNI());
+        dni.añadirLetra(letra);
+        assertEquals(dni.getFinalDNI(), "43474645E");
         
         System.out.println("- Test DNI1 getDni:");
-        System.out.println(asig.getDni());
+        System.out.println(dni.getInitialDNI());
         System.out.println("- Test DNI1 getDNI:");
-        System.out.println(asig.getDNI());
+        System.out.println(dni.getFinalDNI());
         System.out.println('\n');
     }
     

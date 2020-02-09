@@ -19,11 +19,11 @@ public class Asignacion {
     protected int getArrayLength(){
         return arrayLetras.length;
     }
-    public String getDni() {
+    protected String getDni() {
         return this.dni;
     }
     
-    public String getDNI() {
+    protected String getDNI() {
         return this.DNI;
     }
     
