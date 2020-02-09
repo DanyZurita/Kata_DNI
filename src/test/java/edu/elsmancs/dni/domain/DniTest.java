@@ -6,22 +6,6 @@ import org.junit.Test;
 public class DniTest {
     
     @Test
-    public void test() {
-            String initialDNI = "";
-            String finalDNI = "";
-            Dni dni = new Dni(initialDNI);
-            char letra = dni.calcularLetra(dni.getInitialDNI());
-            dni.añadirLetra(letra);
-            assertEquals(dni.getFinalDNI(), finalDNI);
-
-            System.out.println("- Test getInitialDni:");
-            System.out.println(dni.getInitialDNI());
-            System.out.println("- Test getFinalDni:");
-            System.out.println(dni.getFinalDNI());
-            System.out.println('\n');
-        }
-    
-    @Test
     public void DNI1() {
         Dni dni = new Dni("43474645");
         char letra = dni.calcularLetra(dni.getInitialDNI());
