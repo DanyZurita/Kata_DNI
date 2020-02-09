@@ -1,10 +1,26 @@
 package edu.elsmancs.dni.domain;
 
 import static org.junit.Assert.*;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class AsignacionTest {
 
+    @BeforeClass
+    public void testTemplate(String initialDNI, String finalDNI) {
+        Dni dni = new Dni(initialDNI);
+        char letra = dni.calcularLetra(dni.getInitialDNI());
+        dni.añadirLetra(letra);
+        assertEquals(dni.getFinalDNI(), finalDNI);
+        
+        System.out.println("- Test getInitialDni:");
+        System.out.println(dni.getInitialDNI());
+        System.out.println("- Test getFinalDni:");
+        System.out.println(dni.getFinalDNI());
+        System.out.println('\n');
+    
+    }
+    
     @Test
     public void crearAsignacion() {
         Asignacion dni = new Asignacion("43474645");
@@ -19,16 +35,7 @@ public class AsignacionTest {
     
     @Test
     public void DNI1() {
-        Dni dni = new Dni("43474645");
-        char letra = dni.calcularLetra(dni.getInitialDNI());
-        dni.añadirLetra(letra);
-        assertEquals(dni.getFinalDNI(), "43474645E");
-        
-        System.out.println("- Test DNI1 getDni:");
-        System.out.println(dni.getInitialDNI());
-        System.out.println("- Test DNI1 getDNI:");
-        System.out.println(dni.getFinalDNI());
-        System.out.println('\n');
+        testTemplate("43474645", "43474645E");
     }
     
     @Test
